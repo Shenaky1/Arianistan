@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+<rect width="1200" height="750" fill="#dce5eb"/>
+<rect y="520" width="1200" height="230" fill="#8fa987"/>
+<path d="M200 530 L600 210 L1010 530 Z" fill="#f2eee8"/>
+<rect x="285" y="480" width="625" height="210" fill="#f8f6f2"/>
+<rect x="520" y="545" width="145" height="145" fill="#775d49"/>
+<rect x="350" y="535" width="115" height="90" fill="#94c2da"/>
+<rect x="730" y="535" width="115" height="90" fill="#94c2da"/>
+<text x="600" y="710" text-anchor="middle" font-family="Arial" font-size="26" fill="#ffffff">Replace with actual MLS photo</text>
+</svg>
