@@ -1,13 +1,3 @@
-
-const menuButton = document.querySelector('.menu-button');
-const navLinks = document.querySelector('.nav-links');
-if (menuButton && navLinks) {
-  menuButton.addEventListener('click', () => navLinks.classList.toggle('open'));
-}
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, {threshold: 0.08});
-reveals.forEach(el => observer.observe(el));
+const menuButton=document.querySelector('.menu-button');const navLinks=document.querySelector('.nav-links');if(menuButton&&navLinks){menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation')});document.addEventListener('click',e=>{if(!navLinks.contains(e.target)&&!menuButton.contains(e.target)){navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}})}
+const reveals=document.querySelectorAll('.reveal');if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.08});reveals.forEach(el=>observer.observe(el))}else{reveals.forEach(el=>el.classList.add('visible'))}
+const lightbox=document.querySelector('.lightbox');if(lightbox){const lightboxImg=lightbox.querySelector('img');document.querySelectorAll('.gallery-item').forEach(button=>button.addEventListener('click',()=>{const img=button.querySelector('img');lightboxImg.src=img.src;lightboxImg.alt=img.alt;lightbox.showModal()}));lightbox.querySelector('.lightbox-close').addEventListener('click',()=>lightbox.close());lightbox.addEventListener('click',e=>{if(e.target===lightbox)lightbox.close()})}
