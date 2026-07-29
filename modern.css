@@ -192,3 +192,82 @@ input:focus,textarea:focus,select:focus{border-color:var(--gold);outline-color:r
   .home-page .site-footer{padding:9px 0}
   .home-page .footer-bottom{margin:0;padding:0;border:0;text-align:center;font-size:9px;line-height:1.35}
 }
+
+/* Matching compact scale for all interior pages */
+@media(min-width:901px){
+  body:not(.home-page){font-size:14px;line-height:1.5}
+  body:not(.home-page) .nav{min-height:70px}
+  body:not(.home-page) .brand-mark{width:40px;height:40px;font-size:16px}
+  body:not(.home-page) .brand strong{font-size:22px}
+  body:not(.home-page) .brand small{margin-top:4px;font-size:8px}
+  body:not(.home-page) .nav-links{gap:28px}
+  body:not(.home-page) .nav-links a{font-size:13px}
+  body:not(.home-page) .nav-cta{padding:9px 19px}
+
+  body:not(.home-page) .page-hero,
+  body:not(.home-page) .compact-hero{padding:32px 0 28px}
+  body:not(.home-page) .page-hero h1,
+  body:not(.home-page) .listing-banner h1{
+    max-width:960px;
+    margin:8px 0;
+    font-size:clamp(36px,3vw,46px);
+    line-height:1.02;
+  }
+  body:not(.home-page) .page-hero p,
+  body:not(.home-page) .listing-banner p{font-size:14px}
+  body:not(.home-page) .actions{margin-top:16px}
+  body:not(.home-page) .btn{min-height:42px;padding:0 18px;font-size:12px}
+  body:not(.home-page) .section{padding:42px 0}
+  body:not(.home-page) h2{font-size:clamp(28px,2.4vw,38px)}
+  body:not(.home-page) .section-heading{margin-bottom:24px}
+
+  body:not(.home-page) .about-lead{grid-template-columns:1fr 300px;gap:44px}
+  body:not(.home-page) .executive-portrait{max-width:300px;justify-self:end}
+  body:not(.home-page) .journey-layout,
+  body:not(.home-page) .promise-grid,
+  body:not(.home-page) .editorial-split,
+  body:not(.home-page) .contact-layout,
+  body:not(.home-page) .listing-overview{gap:42px}
+  body:not(.home-page) .about-logo{max-width:170px}
+  body:not(.home-page) .timeline-item{grid-template-columns:48px 1fr;gap:16px;padding-bottom:18px}
+  body:not(.home-page) .timeline:before{left:23px}
+  body:not(.home-page) .timeline-item>span{width:48px;height:48px;font-size:9px}
+  body:not(.home-page) .timeline-item h3{font-size:17px}
+  body:not(.home-page) .expect-list li{padding:12px 0}
+
+  body:not(.home-page) .process-grid{gap:14px}
+  body:not(.home-page) .process-card{padding:18px}
+  body:not(.home-page) .process-card>span{width:30px;height:30px;font-size:10px}
+  body:not(.home-page) .process-card h3{margin:8px 0 4px;font-size:19px}
+  body:not(.home-page) .consult-card{padding:22px}
+
+  body:not(.home-page) .listing-banner{padding:32px 0 68px}
+  body:not(.home-page) .listing-top{margin-top:-40px}
+  body:not(.home-page) .listing-layout{gap:16px}
+  body:not(.home-page) .listing-photo img{height:350px}
+  body:not(.home-page) .listing-panel{padding:23px}
+  body:not(.home-page) .listing-price{font-size:36px}
+  body:not(.home-page) .listing-panel h2{font-size:23px}
+  body:not(.home-page) .listing-facts{margin:14px 0}
+  body:not(.home-page) .gallery{gap:8px}
+
+  body:not(.home-page) .contact-layout{grid-template-columns:.7fr 1.3fr}
+  body:not(.home-page) .contact-details{padding-top:8px}
+  body:not(.home-page) .contact-details dl{margin-top:18px}
+  body:not(.home-page) .contact-details dl>div{padding:10px 0}
+  body:not(.home-page) .form-card{padding:22px}
+  body:not(.home-page) form{gap:11px}
+  body:not(.home-page) input,
+  body:not(.home-page) textarea,
+  body:not(.home-page) select{padding:9px 11px;font-size:13px}
+  body:not(.home-page) textarea{min-height:95px}
+
+  body:not(.home-page) .cta-band{padding:28px 0}
+  body:not(.home-page) .cta-band h2{font-size:28px}
+  body:not(.home-page) .site-footer{padding:24px 0 12px}
+  body:not(.home-page) .footer-grid{gap:24px}
+  body:not(.home-page) .footer-grid p{font-size:10px;line-height:1.45}
+  body:not(.home-page) .footer-brand .brand-mark{width:34px;height:34px;font-size:14px}
+  body:not(.home-page) .footer-brand strong{font-size:18px}
+  body:not(.home-page) .footer-bottom{margin-top:14px;padding-top:9px;font-size:9px}
+}
