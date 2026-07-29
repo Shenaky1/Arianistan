@@ -45,6 +45,19 @@ h2{font-size:clamp(2.25rem,3.2vw,3.35rem)}
 .hero-card-body{position:absolute;right:22px;bottom:22px;width:min(370px,calc(100% - 44px));padding:20px 22px;background:rgba(255,255,255,.95);border-radius:10px;box-shadow:0 12px 34px rgba(28,39,35,.14)}
 .hero-card-body strong{font:500 18px Georgia,serif}
 .hero-card-body a{color:var(--green)}
+.home-service-panel{overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.panel-heading{padding:34px 34px 28px;background:var(--stone)}
+.panel-heading>span{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.panel-heading h2{margin:12px 0 10px;color:var(--green);font-size:2.05rem}
+.panel-heading p{margin:0;color:var(--muted);font-size:15px}
+.home-service-panel>a{display:grid;grid-template-columns:34px 1fr 24px;gap:14px;align-items:center;padding:22px 28px;border-top:1px solid var(--line);text-decoration:none;transition:.2s ease}
+.home-service-panel>a:hover{background:var(--cream)}
+.home-service-panel>a>span{color:var(--gold);font-size:12px;font-weight:800}
+.home-service-panel strong,.home-service-panel small{display:block}
+.home-service-panel strong{color:var(--green);font:500 19px Georgia,serif}
+.home-service-panel small{margin-top:3px;color:var(--muted);font-size:13px}
+.home-service-panel b{color:var(--green);font-size:20px;transition:transform .2s}
+.home-service-panel>a:hover b{transform:translateX(3px)}
 .section{padding:72px 0}
 .intro-section{padding:66px 0}
 .section-alt{background:var(--stone)}
