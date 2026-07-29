@@ -274,6 +274,26 @@ input:focus,textarea:focus,select:focus{border-color:var(--gold);outline-color:r
 /* Scale down all pages except Home */
 @media (min-width: 901px) {
   body:not(.home-page) {
-    zoom: 70%;
+    zoom: 75%;
   }
 }
+/* Reduce the shaded heading area on interior pages */
+@media (min-width: 901px) {
+  body:not(.home-page) .page-hero,
+  body:not(.home-page) .compact-hero {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+
+  body:not(.home-page) .listing-banner {
+    padding-top: 18px !important;
+    padding-bottom: 48px !important;
+  }
+
+  body:not(.home-page) .page-hero h1,
+  body:not(.home-page) .listing-banner h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
