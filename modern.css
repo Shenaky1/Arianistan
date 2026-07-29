@@ -271,3 +271,9 @@ input:focus,textarea:focus,select:focus{border-color:var(--gold);outline-color:r
   body:not(.home-page) .footer-brand strong{font-size:18px}
   body:not(.home-page) .footer-bottom{margin-top:14px;padding-top:9px;font-size:9px}
 }
+/* Scale down all pages except Home */
+@media (min-width: 901px) {
+  body:not(.home-page) {
+    zoom: 70%;
+  }
+}
