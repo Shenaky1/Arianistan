@@ -296,4 +296,33 @@ input:focus,textarea:focus,select:focus{border-color:var(--gold);outline-color:r
     margin-bottom: 5px;
   }
 }
+/* Final reduction of interior-page top area */
+@media (min-width: 901px) {
+  body:not(.home-page) .page-hero,
+  body:not(.home-page) .compact-hero {
+    padding: 10px 0 !important;
+    min-height: 0 !important;
+  }
+
+  body:not(.home-page) .page-hero h1 {
+    font-size: 28px !important;
+    line-height: 1.05 !important;
+    margin: 4px 0 !important;
+  }
+
+  body:not(.home-page) .page-hero p {
+    font-size: 12px !important;
+    margin: 4px 0 !important;
+  }
+
+  body:not(.home-page) .page-hero .actions {
+    margin-top: 8px !important;
+  }
+
+  body:not(.home-page) .page-hero .btn {
+    min-height: 32px !important;
+    padding: 0 14px !important;
+    font-size: 10px !important;
+  }
+}
 
