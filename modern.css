@@ -127,3 +127,48 @@ html {
 body {
   font-size: 14.5px;
 }
+@media (min-width: 901px) {
+  .home-hero {
+    height: calc(100vh - 92px);
+    min-height: 600px;
+    max-height: 760px;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-grid {
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 3.2vw, 54px);
+    margin: 14px 0;
+  }
+
+  .hero-lead {
+    font-size: 16px;
+  }
+
+  .actions {
+    margin-top: 18px;
+  }
+
+  .trust-line {
+    margin-top: 18px;
+    padding-top: 14px;
+  }
+
+  .panel-heading {
+    padding: 22px 26px 18px;
+  }
+
+  .panel-heading h2 {
+    font-size: 26px;
+    margin: 8px 0;
+  }
+
+  .home-service-panel > a {
+    padding: 14px 22px;
+  }
+}
