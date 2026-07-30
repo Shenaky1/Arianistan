@@ -325,4 +325,21 @@ input:focus,textarea:focus,select:focus{border-color:var(--gold);outline-color:r
     font-size: 10px !important;
   }
 }
+/* Increase service-panel text on every device */
+.home-service-panel .panel-heading h2 {
+  font-size: 2.15rem !important;
+}
 
+.home-service-panel .panel-heading p {
+  font-size: 1.15rem !important;
+  line-height: 1.55 !important;
+}
+
+.home-service-panel a strong {
+  font-size: 1.65rem !important;
+}
+
+.home-service-panel a small {
+  font-size: 1.1rem !important;
+  line-height: 1.5 !important;
+}
